@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/edd21fb7ea.js" crossorigin="anonymous"></script>
+    <style>
+        nav {
+            background-color: #00524688;
+            background: rgba(1, 84, 74, 0.8) url(./drink/menu_bg.png)repeat-x top left;
+            height: 170px;
+            padding: 20px;
+            display: block;
+        }
+
+        .nav_right {
+            right: 0;
+        }
+
+
+        .logo {
+            display: block;
+            margin: auto;
+
+        }
+
+        .lan {
+            color: #fff;
+            font-size: 0.9rem;
+            align-items: center;
+
+
+
+        }
+
+        .chang-lan {
+            display: flex;
+            align-items: center;
+
+        }
+
+        a {
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .mobile-menu-btn {
+            font-size: 2rem;
+            align-self: center;
+            /* display: flex-end;
+            right: 0; */
+
+        }
+
+
+        .chang-lan a {
+
+            font-size: 0.9rem;
+            margin: 5px;
+        }
+
+        .nav-links-area a {}
+
+        .nav-links-area ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .nav-links-area li {
+            margin: 50px auto;
+        }
+
+        .nav-links-area li a {
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        #NEWS_FB {
+            background: #5c993c url(../img/news_bg.jpg)no-repeat bottom center;
+            padding-top: 30px;
+            padding-bottom: 70px;
+            display: block;
+        }
+
+
+
+        .home_news_tit {
+            color: #fff;
+            border-radius: 5px;
+            border: 1px solid #a8ca98;
+            width: 10%;
+            float: left;
+            display: block;
+            text-align: center;
+        }
+
+        .news_home ul li p {
+            width: 20%;
+            display: inline-block;
+            text-align: left;
+            color: #cbdec2;
+            font-size: 12px;
+        }
+
+        .news_home ul li {
+            list-style: none;
+            line-height: 50px;
+            text-align: left;
+            border-bottom: 1px solid #82b16b;
+
+        }
+
+        .news_home ul li:last-child {
+            border-bottom: none;
+        }
+
+        /* .home_news_btn2 {
+            right: 0;
+        } */
+
+        .news_home a {
+            color: #fff;
+        }
+
+        .container_fluid>.container>.row {
+            width: 1170px;
+        }
+
+        .home_center_bg {
+            background: url(./drink/main_bg.png) no-repeat top center;
+            min-height: 600px;
+        }
+
+        .home_main_left {
+            margin-top: 70px;
+        }
+
+        .store {
+            border: 5px solid #ddead8;
+            padding: 20px;
+            position: relative;
+            margin-bottom: 50px;
+            color: #64853A;
+            text-align: left;
+        }
+
+        img {
+            color: transparent;
+            font-size: 0;
+            vertical-align: middle;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        h5 {
+            margin-bottom: 0;
+        }
+
+        .tabs_tit {
+            background: #9DC28A;
+            color: #fff;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #myTab {
+            background: #9DC28A;
+            color: #fff;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #contact {
+            background: #005246;
+            color: #fff;
+        }
+
+        section {
+            padding: 20px 0;
+            border: 0;
+            margin: 0;
+            font-size: 100%;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="row">
+
+                <div class="logo position-relative">
+                    <a href="#">
+                        <img src="./drink/logo.png" alt="">
+                    </a>
+                </div>
+                <a href="#" class="mobile-menu-btn d-block d-xl-none">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <div class="nav_right ml-auto position-absolute d-none d-xl-block">
+                    <div class="lan d-flex justify-content-end">
+                        <i class="fas fa-globe-asia"></i>
+                        <div class="chang-lan">
+                            <a href="">繁中</a><span>|</span>
+                            <a href="">JP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-links-area d-none d-xl-block">
+                <ul class="d-flex">
+                    <li>
+                        <a href="">最新消息</a>
+                    </li>
+                    <li>
+                        <a href="">產品介紹</a>
+                    </li>
+                    <li>
+                        <a href="">門市據點</a>
+                    </li>
+                    <li>
+                        <a href="">關於我們</a>
+                    </li>
+                    <li>
+                        <a href="">加盟專區</a>
+                    </li>
+                    <li>
+                        <a href="">檢驗報告</a>
+                    </li>
+                    <li>
+                        <a href="">常見問題</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="big-pic">
+        <div class="item">
+            <a href="">
+                <img src="./drink/2106091659470000001.jpg" class="img-fluid w-100" alt="">
+            </a>
+        </div>
+    </div>
+    <div id="NEWS_FB">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12  news_home">
+                    <div class="home_news_tit">
+                        <h3>最新消息</h3>
+                    </div>
+                    <ul>
+
+                        <li>
+                            <p>2021-07-13</p> <a href="#">所有一線防疫人員，你們辛苦了！</a>
+                        </li>
+
+                        <li>
+                            <p>2021-07-13</p> <a href="#">清心福全夏季飲品推薦</a>
+                        </li>
+
+                        <li>
+                            <p>2021-07-13</p> <a href="#">防疫手寫字紙杯暖暖出動！</a>
+                        </li>
+                    </ul>
+                    <div class="home_news_btn2"><a href="#">MORE</a></div>
+                </div>
+                <div class="col-md-4 col-md-offset-1 col-sm-12 fb_block">
+                    <!--綠色-->
+                    <!-- <div class="fb_block_people"><img src="./drink/fb_people.png"></div> -->
+                    <!--/ad_block_people-->
+                    <div class="fb_line">
+                        <a href="https://www.facebook.com/chingshin1987">
+                            <img src="./drink/fb_word.png"></a>
+                    </div>
+                    <div class="like">
+                        <i class="far fa-thumbs-up"></i>
+                        <p>Yi Xuan 和其他12萬人都說這個讚。</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <div class="container_fluid home_center_bg">
+        <div class="cotainer">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 home_main_left">
+                    <div class="store d-flex">
+                        <div class="store_people">
+                            <!-- style="text-align: right;" -->
+                            <img src="./drink/people.png" alt="">
+                        </div>
+                        <h4>STORE</h4>
+                        <h5>搜尋據點</h5>
+                        <form method="post" action="store.php#tab-4">
+                            <div>
+
+                                <select id="city" name="city" style="border: 1px solid #76AB23;margin-top:5px;
+                            font-size: 14px; color: #76AB23;padding: 5px 5px;">
+                                    <option value="">-- 請選擇縣市 --</option>
+                                    <option value="5">台北市</option>
+                                    <option value="4">新北市</option>
+                                </select>
+
+                                <select id="area" name="area" style="border: 1px solid #76AB23;margin-top:5px;
+                            font-size: 14px; color: #76AB23;padding: 5px 5px;">
+                                    <option value="">-- 請選擇區 --</option>
+
+                                    <option value="54" class="5">士林區</option>
+                                    <option value="26" class="11">大甲區</option>
+                                    <option value="295" class="8">東區</option>
+                                </select>
+                            </div>
+
+                            <div style="margin-top:5px;">
+                                <input name="keyword" type="text_home" class="input" placeholder="請輸入街道名稱">
+                                <input type="submit" class="submit_btn_home" value="SEARCH">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tabs">
+                        <div class="tabs_tit">
+                            <h4>NEWS</h4>
+                            <h5>最新消息</h5>
+                            <div class="tabs_tit_line"></div>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">最新活動</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">產品推薦</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">門市資訊</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="four-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">媒體報導</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 home_main_right">
+                    <div class="main_right_pic">
+                        <img src="./drink/1901181153550000001.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 copy_left">
+                    <img src="./drink/logo_down.png">
+                    <p>© 2015 清心福全冷飲站 All Rights Reserved. <br><span style="color:#005246; font-size:8px; ">Designed by
+                            <a href="http://www.artware.com.tw" target="_blank" title="艾傑創意設計 網頁設計"
+                                style="font-size:8px; color:#005246">ARTWARE</a></span></p>
+                </div>
+
+                <div class="col-sm-6 text-right copy_right">
+                    <p>臺南市北區育德路520號 　服務專線0917-506776</p>
+                    <p>E-MAIL : csfc1987@gmail.com</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
